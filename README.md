@@ -19,15 +19,10 @@ Bộ dữ liệu sử dụng trong giải thuật này là [Baskets](https://dri
 
 MyMapper:
     Bước 1: Đọc dữ liệu trong Baskets.
-    Bước 2: Với mỗi dòng dữ liệu ghi nhận, xử lý chuỗi để trích xuất trường thông tin
-                    Date và Member_number. Sau đó, ghi nhận cặp key-value (Date, Member_number)
-                    vào tập kết quả.
-                    Hết bước này, chương trình thực hiện Group-by-Key (với key là Date) trên
-                    toàn bộ tập mục context ghi nhận được.
+    Bước 2: Với mỗi dòng dữ liệu ghi nhận, xử lý chuỗi để trích xuất trường thông tin Date và Member_number. Sau đó, ghi nhận cặp key-value (Date, Member_number) vào tập kết quả. Hết bước này, chương trình thực hiện Group-by-Key (với key là Date) trên toàn bộ tập mục context ghi nhận được.
 
 MyReducer:
-    Bước 1: Nhận lần lượt các tập mục đã được gom nhóm theo Date và lọc bỏ các
-				    Member_number trùng lặp trong ngày đó.
+    Bước 1: Nhận lần lượt các tập mục đã được gom nhóm theo Date và lọc bỏ các Member_number trùng lặp trong ngày đó.
     Bước 2: Ghi kết quả vào file trong midterm/output/task1.
 ```
 
