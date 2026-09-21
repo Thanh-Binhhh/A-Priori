@@ -53,8 +53,8 @@ I_{\mathrm{frequent}}:\ Support(I) \ge \delta
 Ngoài ra, thuật toán A-Priori cũng giúp sàng lọc bớt những cặp mục không có tiềm năng ngay từ sớm, nhờ tính chất: với mọi $X$ là tập con của $Y$, nếu $Support$ của tập $X$ không lớn hơn hoặc bằng $min\_support$ thì $Support$ tập $Y$ cũng không thể đạt ngưỡng.
 
 ```math
-\forall X, Y:\ (X \subseteq Y) \land \left(\operatorname{support}(X) < minSup\right)
-\Rightarrow \operatorname{support}(Y) < minSup
+\forall X, Y:\ (X \subseteq Y) \land \left(support(X) < minSup\right)
+\Rightarrow support(Y) < minSup
 ```
 
 Với bài toán này, các cặp khách hàng thường xuyên được xác định là **những cặp khách hàng thường xuất hiện cùng nhau trong cùng ngày**.
